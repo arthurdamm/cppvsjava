@@ -18,6 +18,6 @@ public class Test {
 	    }
 
 	    long endTime = java.lang.System.nanoTime();
-	    System.out.println("cost : " + (double)(endTime - startTime)/1000000000 + "s");
+	    System.out.println("Java cost : " + (double)(endTime - startTime)/1000000000 + "s");
 	}
 }

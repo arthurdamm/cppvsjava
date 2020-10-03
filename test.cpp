@@ -21,7 +21,7 @@ int main() {
 
     clock_gettime(CLOCK_REALTIME, &te);    
     cost = te.tv_sec - ts.tv_sec + (double)(te.tv_nsec-ts.tv_nsec)/NANO;
-    printf("cost: %-15.10f s\n", cost);
+    printf("CPP cost: %-15.10f s\n", cost);
 
     return 0;
 }
