@@ -1,12 +1,12 @@
 import java.util.Map;
 import java.util.HashMap;
-import java.util.FileReader;
-import java.util.BufferedReader;
+import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class Test {
 	public static void main(String[] args) throws Exception {
 
-	    long startTime = System.currentTimeMillis();
+	    long startTime = java.lang.System.nanoTime();
 	    Map<String, Integer> map = new HashMap<String, Integer>();
 	    FileReader reader = new FileReader("inputfile.txt");
 	    BufferedReader br = new BufferedReader(reader);
@@ -17,7 +17,7 @@ public class Test {
 		map.put(str, count == null ? 1 : count + 1);
 	    }
 
-	    long endTime = System.currentTimeMillis();
-	    System.out.println("cost : " + (endTime - startTime)/1000 + "s");
+	    long endTime = java.lang.System.nanoTime();
+	    System.out.println("cost : " + (double)(endTime - startTime)/1000000000 + "s");
 	}
 }
